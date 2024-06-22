@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --purple-gradient: #2F1564;
+  --blue-gradient: #00335B;
+  --blue-header: #0B224D;
+  --white-text: #EFEFEF;
+  --gray-button: rgba(97, 96, 107, 0.52);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0px;
+  height: 100vh;
+}
