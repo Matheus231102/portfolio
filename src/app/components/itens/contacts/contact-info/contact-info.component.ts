@@ -1,9 +1,12 @@
 import {Component, Input} from '@angular/core';
+import {HighlightHoverDirective} from "../../../../directives/highlight-hover.directive";
 
 @Component({
   selector: 'app-contact-info',
   standalone: true,
-  imports: [],
+  imports: [
+    HighlightHoverDirective
+  ],
   templateUrl: './contact-info.component.html',
   styles: `
     .centralized {
@@ -23,10 +26,6 @@ import {Component, Input} from '@angular/core';
     }
 
     .container:hover {
-      -webkit-box-shadow: #FFF 0 -1px 4px, #00a6ff 0 -2px 10px, #00ffff 0 -10px 20px, 5px 5px 15px 5px rgba(0, 0, 0, 0.13);
-      box-shadow: #FFF 0 -1px 4px, #389ec9 0 -2px 10px, #258a72 0 -10px 20px, 5px 5px 15px 5px rgba(0, 0, 0, 0.13);
-      background: #F5F5F5;
-
       .contact-info-title {
         color: black;
       }
@@ -61,6 +60,6 @@ import {Component, Input} from '@angular/core';
 })
 export class ContactInfoComponent {
   @Input("src") src: string = "";
-  @Input("title") title: string = "";
+  @Input("descriptionTitle") descriptionTitle: string = "";
 
 }

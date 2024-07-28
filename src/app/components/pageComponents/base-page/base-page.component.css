@@ -95,8 +95,10 @@
 }
 
 .header-container-options-option:hover {
-  background-color: #153173;
+  color: #000000;
 }
+
+
 
 .main-container-content {
   width: 60em;

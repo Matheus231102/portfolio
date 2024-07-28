@@ -4,7 +4,7 @@
     <div class="contacts-container">
       <div class="contact-item">
 
-        <app-contact-info src="assets/contacts-logo/email.png" title="E-mail">
+        <app-contact-info src="assets/contacts-logo/email.png" descriptionTitle="E-mail">
           <div>
             <div class="contact-item-text">
               {{ ProfileConstants.email }}
@@ -20,7 +20,7 @@
 
       <div class="contact-item">
 
-        <app-contact-info src="assets/contacts-logo/whatsapp.png" title="Whatssap">
+        <app-contact-info src="assets/contacts-logo/whatsapp.png" descriptionTitle="Whatssap">
           <div>
             <div class="contact-item-text">
               {{ ProfileConstants.whatssap }}
@@ -34,16 +34,16 @@
 
       </div>
 
-      <div class="contact-item pointer" (click)="goToGithub()">
-        <app-contact-info src="assets/contacts-logo/github.png" title="Github">
+      <div class="contact-item click" (click)="goToGithub()">
+        <app-contact-info src="assets/contacts-logo/github.png" descriptionTitle="Github" >
           <div class="contact-item-text">
             {{ ProfileConstants.githubLinkResume }}
           </div>
         </app-contact-info>
       </div>
 
-      <div class="contact-item pointer" (click)="goToLinkedin()">
-        <app-contact-info src="assets/contacts-logo/linkedin.png" title="Linkedin">
+      <div class="contact-item click" (click)="goToLinkedin()">
+        <app-contact-info src="assets/contacts-logo/linkedin.png" descriptionTitle="Linkedin">
           <div class="contact-item-text">
             {{ ProfileConstants.linkedinLinkResume }}
           </div>
