@@ -1,6 +1,12 @@
 .box {
-  height: 100%;
-  width: 100%;
-  margin: 2px;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
   background-color: aqua;
+}
+
+.page-container {
+  height: calc(100vh - 4em);
+  width: 100%;
+  overflow: auto;
 }
