@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {RouterService} from "../../../services/router/router.service";
 
 @Component({
   selector: 'app-base-page',
@@ -9,5 +10,24 @@ import { Component } from '@angular/core';
   styleUrl: './base-page.component.css'
 })
 export class BasePageComponent {
+
+  constructor(private routerService: RouterService) {}
+
+  toHomepage() {
+    this.routerService.toHomepage()
+  }
+
+  toContacts() {
+    this.routerService.toContacts()
+  }
+
+  toProjects() {
+    this.routerService.toProjects()
+  }
+
+  toTechnologies() {
+    this.routerService.toTechnologies()
+  }
+
 
 }

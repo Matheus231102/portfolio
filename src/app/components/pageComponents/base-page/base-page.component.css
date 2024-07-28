@@ -69,7 +69,9 @@
 }
 
 #logo-image {
+  padding: 4px;
   height: 100%;
+  cursor: pointer;
 }
 
 .header-container-options {

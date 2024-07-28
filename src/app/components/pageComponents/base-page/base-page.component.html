@@ -3,12 +3,12 @@
     <div class="header-container-content">
 
       <div class="header-container-logo">
-       <img id="logo-image" src="assets/images/logoport.png">
+       <img id="logo-image" src="assets/images/logoport.png" (click)="toHomepage()">
       </div>
       <ul class="header-container-options">
-        <li class="header-container-options-option">Contatos</li>
-        <li class="header-container-options-option">Projetos</li>
-        <li class="header-container-options-option">Tecnologias</li>
+        <li class="header-container-options-option" (click)="toContacts()">Contatos</li>
+        <li class="header-container-options-option" (click)="toProjects()">Projetos</li>
+        <li class="header-container-options-option" (click)="toTechnologies()">Tecnologias</li>
       </ul>
 
     </div>
@@ -16,12 +16,7 @@
 
   <div class="main-container">
     <div class="main-container-content">
-      texto texto texto texto texto texto
-      texto texto texto texto texto texto
-      texto texto texto texto texto texto
-      texto texto texto texto texto texto
-      texto texto texto texto texto texto
-      texto texto texto texto texto texto
+      <ng-content></ng-content>
     </div>
 
     <footer class="footer-container">
