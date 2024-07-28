@@ -2,12 +2,12 @@
   <header class="header-container">
     <div class="header-container-content">
       <div class="header-container-logo">
-       <img id="logo-image" src="assets/images/logoport.png" (click)="toHomepage()">
+       <img id="logo-image" src="assets/images/logoport.png" (click)="routerService.toHomepage()">
       </div>
       <ul class="header-container-options">
-        <li highlightHover class="header-container-options-option" (click)="toContacts()">Contatos</li>
-        <li highlightHover class="header-container-options-option" (click)="toProjects()">Projetos</li>
-        <li highlightHover class="header-container-options-option" (click)="toTechnologies()">Tecnologias</li>
+        <li highlightHover class="header-container-options-option" (click)="routerService.toContacts()">Contatos</li>
+        <li highlightHover class="header-container-options-option" (click)="routerService.toProjects()">Projetos</li>
+        <li highlightHover class="header-container-options-option" (click)="routerService.toTechnologies()">Tecnologias</li>
       </ul>
     </div>
   </header>
@@ -22,10 +22,10 @@
             © 2024 Matheus Badia. Todos os direitos reservados.
           </p>
           <ul class="footer-options">
-            <li whiteShadowHover class="footer-options-option footer-font click">Github</li>
-            <li whiteShadowHover class="footer-options-option footer-font click">Linkedin</li>
-            <li whiteShadowHover class="footer-options-option footer-font click">E-mail</li>
-            <li whiteShadowHover class="footer-options-option footer-font click">Whatssap</li>
+            <li whiteShadowHover class="footer-options-option footer-font click" (click)="contactService.goToGithub()">Github</li>
+            <li whiteShadowHover class="footer-options-option footer-font click" (click)="contactService.goToLinkedin()">Linkedin</li>
+            <li whiteShadowHover class="footer-options-option footer-font click" (click)="contactService.sendEmail()">E-mail</li>
+            <li whiteShadowHover class="footer-options-option footer-font click" (click)="contactService.sendMessage()">Whatssap</li>
           </ul>
         </div>
       </footer>

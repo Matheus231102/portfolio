@@ -10,8 +10,8 @@
               {{ ProfileConstants.email }}
             </div>
             <div class="contact-item-text-buttons-container">
-              <button class="contact-item-button" (click)="sendEmail()">Enviar e-mail</button>
-              <button class="contact-item-button" (click)="copyEmail()">Copiar e-mail</button>
+              <button class="contact-item-button" (click)="contactService.sendEmail()">Enviar e-mail</button>
+              <button class="contact-item-button" (click)="contactService.copyEmail()">Copiar e-mail</button>
             </div>
           </div>
         </app-contact-info>
@@ -26,15 +26,15 @@
               {{ ProfileConstants.whatssap }}
             </div>
             <div class="contact-item-text-buttons-container">
-              <button class="contact-item-button" (click)="sendMessage()">Enviar mensagem</button>
-              <button class="contact-item-button" (click)="copyNumber()">Copiar número</button>
+              <button class="contact-item-button" (click)="contactService.sendMessage()">Enviar mensagem</button>
+              <button class="contact-item-button" (click)="contactService.copyNumber()">Copiar número</button>
             </div>
           </div>
         </app-contact-info>
 
       </div>
 
-      <div class="contact-item click" (click)="goToGithub()">
+      <div class="contact-item click" (click)="contactService.goToGithub()">
         <app-contact-info src="assets/contacts-logo/github.png" descriptionTitle="Github" >
           <div class="contact-item-text">
             {{ ProfileConstants.githubLinkResume }}
@@ -42,7 +42,7 @@
         </app-contact-info>
       </div>
 
-      <div class="contact-item click" (click)="goToLinkedin()">
+      <div class="contact-item click" (click)="contactService.goToLinkedin()">
         <app-contact-info src="assets/contacts-logo/linkedin.png" descriptionTitle="Linkedin">
           <div class="contact-item-text">
             {{ ProfileConstants.linkedinLinkResume }}

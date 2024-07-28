@@ -3,6 +3,7 @@ import {BasePageComponent} from "../base-page/base-page.component";
 import {ContactInfoComponent} from "../../itens/contacts/contact-info/contact-info.component";
 import {ProfileConstants} from "../../../constants/ProfileConstants";
 import {HighlightHoverDirective} from "../../../directives/highlight-hover.directive";
+import {ContactService} from "../../../services/contact/contact.service";
 
 @Component({
   selector: 'app-contact-page',
@@ -17,29 +18,8 @@ import {HighlightHoverDirective} from "../../../directives/highlight-hover.direc
 })
 export class ContactPageComponent {
 
-    protected readonly ProfileConstants = ProfileConstants;
+  protected readonly ProfileConstants = ProfileConstants;
 
-  sendEmail() {
-    window.open(`mailto:${this.ProfileConstants.email}`);
-  }
+  constructor(protected contactService: ContactService) {}
 
-  sendMessage() {
-    window.open(ProfileConstants.whatssapLink, "_blank")
-  }
-
-  copyEmail() {
-    navigator.clipboard.writeText(ProfileConstants.email)
-  }
-
-  copyNumber() {
-    navigator.clipboard.writeText(ProfileConstants.number)
-  }
-
-  goToGithub() {
-    window.open(ProfileConstants.githubLink, "_blank")
-  }
-
-  goToLinkedin() {
-    window.open(ProfileConstants.linkedinLink, "_blank")
-  }
 }
