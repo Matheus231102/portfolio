@@ -99,7 +99,6 @@
 }
 
 .main-container-content {
-  background-color: rgba(107, 155, 96, 0.58);
   width: 60em;
   height: 100%;
 
@@ -123,7 +122,9 @@
 }
 
 .footer-container {
-  width: 100%;
+  width: 100vw;
+
+
   min-height: 3em;
   background-color: var(--blue-header);
 
@@ -136,8 +137,6 @@
 .footer-container-content {
   width: 60em;
   height: 100%;
-
-  background-color: rgba(239, 239, 239, 0.34);
 
   display: flex;
   flex-direction: row;
