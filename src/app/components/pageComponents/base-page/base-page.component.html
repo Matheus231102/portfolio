@@ -1,7 +1,6 @@
 <div class="container">
   <header class="header-container">
     <div class="header-container-content">
-
       <div class="header-container-logo">
        <img id="logo-image" src="assets/images/logoport.png" (click)="toHomepage()">
       </div>
@@ -10,30 +9,25 @@
         <li class="header-container-options-option" (click)="toProjects()">Projetos</li>
         <li class="header-container-options-option" (click)="toTechnologies()">Tecnologias</li>
       </ul>
-
     </div>
   </header>
-
   <div class="main-container">
     <div class="main-container-content">
       <ng-content></ng-content>
     </div>
-
     <footer class="footer-container">
       <div class="footer-container-content">
-        <p class="footer-container-options-message footer-font">
+        <p class="footer-message footer-font">
           © 2024 Matheus Badia. Todos os direitos reservados.
         </p>
-        <ul class="footer-container-options">
-          <li class="footer-container-options-option footer-font">Github</li>
-          <li class="footer-container-options-option footer-font">Linkedin</li>
-          <li class="footer-container-options-option footer-font">E-mail</li>
-          <li class="footer-container-options-option footer-font">Whatssap</li>
+        <ul class="footer-options">
+          <li class="footer-options-option footer-font">Github</li>
+          <li class="footer-options-option footer-font">Linkedin</li>
+          <li class="footer-options-option footer-font">E-mail</li>
+          <li class="footer-options-option footer-font">Whatssap</li>
         </ul>
       </div>
     </footer>
-
   </div>
-
 </div>
 
