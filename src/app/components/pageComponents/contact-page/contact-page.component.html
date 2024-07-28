@@ -1,39 +1,55 @@
 <app-base-page>
   <div class="page-container">
+
     <div class="contacts-container">
-
       <div class="contact-item">
-        <app-contact-info src="assets/contacts-logo/github.png" title="Github">
-          <div>
-            Testing the container github contact
-          </div>
-        </app-contact-info>
-      </div>
 
-      <div class="contact-item">
-        <app-contact-info src="assets/contacts-logo/linkedin.png" title="Linkedin">
-          <div>
-            Testing the container linkedin contact
-          </div>
-        </app-contact-info>
-      </div>
-
-      <div class="contact-item">
         <app-contact-info src="assets/contacts-logo/email.png" title="E-mail">
           <div>
-            Testing the container e-mail contact
+            <div class="contact-item-text">
+              {{ ProfileConstants.email }}
+            </div>
+            <div class="contact-item-text-buttons-container">
+              <button class="contact-item-button" (click)="sendEmail()">Enviar e-mail</button>
+              <button class="contact-item-button" (click)="copyEmail()">Copiar e-mail</button>
+            </div>
           </div>
         </app-contact-info>
+
       </div>
 
       <div class="contact-item">
+
         <app-contact-info src="assets/contacts-logo/whatsapp.png" title="Whatssap">
           <div>
-            Testing the container whatssap contact
+            <div class="contact-item-text">
+              {{ ProfileConstants.whatssap }}
+            </div>
+            <div class="contact-item-text-buttons-container">
+              <button class="contact-item-button" (click)="sendMessage()">Enviar mensagem</button>
+              <button class="contact-item-button" (click)="copyNumber()">Copiar número</button>
+            </div>
+          </div>
+        </app-contact-info>
+
+      </div>
+
+      <div class="contact-item pointer" (click)="goToGithub()">
+        <app-contact-info src="assets/contacts-logo/github.png" title="Github">
+          <div class="contact-item-text">
+            {{ ProfileConstants.githubLinkResume }}
           </div>
         </app-contact-info>
       </div>
 
+      <div class="contact-item pointer" (click)="goToLinkedin()">
+        <app-contact-info src="assets/contacts-logo/linkedin.png" title="Linkedin">
+          <div class="contact-item-text">
+            {{ ProfileConstants.linkedinLinkResume }}
+          </div>
+        </app-contact-info>
+      </div>
     </div>
+
   </div>
 </app-base-page>

@@ -11,7 +11,6 @@
 .contacts-container {
   margin-top: 10px;
   width: 60%;
-  height: 800px;
 
   display: flex;
   flex-direction: column;
@@ -23,6 +22,55 @@
   }
 }
 
+.contacts-container-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
 .contact-item {
   width: 100%;
+}
+
+.contact-item-text-buttons-container {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.contact-item-text {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+
+  @media only screen and (max-width: 576px) {
+    font-size: 14px;
+  }
+
+}
+
+
+
+.contact-item-button {
+  color: #f1f1f1;
+  border: none;
+  background-color: rgba(11, 34, 77, 0.51);
+  padding: 0.5em;
+  margin: 0px 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.contact-item-button:hover {
+  cursor: pointer;
+  background-color: rgba(178, 208, 248, 0.32);
+  color: black;
+}
+
+.pointer:hover {
+  cursor: pointer;
 }
