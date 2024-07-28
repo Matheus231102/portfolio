@@ -18,6 +18,14 @@
     display: none;
   }
 
+  .header-container-logo {
+    display: none;
+  }
+
+  .header-container-options {
+    width: 100%;
+  }
+
   .footer-font {
     font-size: 16px;
   }
