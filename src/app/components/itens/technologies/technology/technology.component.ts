@@ -61,7 +61,6 @@ import {HighlightHoverDirective} from "../../../../directives/highlight-hover.di
 export class TechnologyComponent {
   @Input("technologyName") technologyName: string = "";
   @Input("source") source: string = "";
-  @Input("altDescription") altDescription = "";
-  @Input() widthBlock!: boolean;
+  @Input("altDescription") altDescription: string = "";
 
 }

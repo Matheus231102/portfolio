@@ -11,7 +11,7 @@
             </div>
             <div class="contact-item-text-buttons-container">
               <button class="contact-item-button" (click)="contactService.sendEmail()">Enviar e-mail</button>
-              <button class="contact-item-button" (click)="contactService.copyEmail()">Copiar e-mail</button>
+              <button class="contact-item-button" (click)="copyEmail()">Copiar e-mail</button>
             </div>
           </div>
         </app-contact-info>
@@ -27,7 +27,7 @@
             </div>
             <div class="contact-item-text-buttons-container">
               <button class="contact-item-button" (click)="contactService.sendMessage()">Enviar mensagem</button>
-              <button class="contact-item-button" (click)="contactService.copyNumber()">Copiar número</button>
+              <button class="contact-item-button" (click)="copyNumber()">Copiar número</button>
             </div>
           </div>
         </app-contact-info>
@@ -52,4 +52,12 @@
     </div>
 
   </div>
+
+  <div class="notification-container">
+    <app-contact-notification-popup #notificationElement>
+      <p>E-mail copiado com sucesso</p>
+      <p>{{ message }}</p>
+    </app-contact-notification-popup>
+  </div>
+
 </app-base-page>

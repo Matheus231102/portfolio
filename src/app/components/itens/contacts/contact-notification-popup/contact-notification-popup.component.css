@@ -1,0 +1,14 @@
+.container-notification {
+  background-color: #f1f1f1;
+  border-radius: 0.5em;
+  border: 1px solid #8f8f8f;
+  padding: 1em;
+}
+
+.notification-text {
+  color: #0B224D;
+}
+
+.hidden {
+  visibility: hidden;
+}
