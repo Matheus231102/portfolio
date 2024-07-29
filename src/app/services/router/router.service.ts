@@ -24,4 +24,7 @@ export class RouterService {
     this.router.navigate(["tecnologias"])
   }
 
+  public goToLink(link: string) {
+    window.open(link, "_blank")
+  }
 }
