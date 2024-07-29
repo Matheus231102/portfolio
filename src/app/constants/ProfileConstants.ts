@@ -1,6 +1,6 @@
 export class ProfileConstants {
   static email: string = "matheusbadia23@gmail.com"
-  static whatssap: string = "(21) 983146336"
+  static whatssap: string = "(21) 98314-6336"
   static whatssapLink: string = "https://api.whatsapp.com/send?phone=5521983146336";
 
   static githubLink: string = "https://github.com/Matheus231102"
