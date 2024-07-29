@@ -2,16 +2,13 @@
   <div class="page-container">
 
     <div class="projects-container">
-      <app-project class="project"
+      <app-project class="project" (click)="projectsRouterService.project01()"
         [projectTitle]="'Sistema de gerenciamento de tarefas com autenticação / autorização via Token JWT'"
-        [usedTechnologies]="'Java, Spring Boot, Angular, Spring Security'"
+        [usedTechnologies]="'Spring boot, Spring web, Spring data JPA, Spring Security, SQL, MySQL, JWT authentication'"
       ></app-project>
-
-      <app-project class="project"
-        [projectTitle]="'Sistema de gerenciamento de tarefas com autenticação / autorização via Token JWT junto com Front-end feito em Angular'"
-        [usedTechnologies]="'Java, Spring Boot, Angular, Spring Security'"
-      ></app-project>
-
+      <p>
+        Em breve novos projetos serão documentados...
+      </p>
     </div>
 
   </div>

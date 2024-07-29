@@ -1,0 +1,54 @@
+.container {
+  height: 50px;
+  width: 16em;
+  margin-top: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0B224D;
+  border-radius: 0.5em;
+  border: 1px solid #f1f1f1;
+}
+
+.container:hover {
+  cursor: pointer;
+  border: 1px solid #0B224D;
+
+  .main-text-link {
+    color: #000000;
+  }
+
+  .github-logo-white {
+    visibility: hidden;
+  }
+  .github-logo-black {
+    visibility: visible;
+  }
+}
+
+.github-logo-container {
+  position: relative;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.github-logo-white, .github-logo-black {
+  height: 100%;
+  width: 100%;
+}
+
+.github-logo-black {
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.github-text-container {
+  width: calc(16em - 4em);
+  text-align: center;
+  font-weight: 700;
+}
+

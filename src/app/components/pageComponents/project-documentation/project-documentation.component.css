@@ -1,0 +1,32 @@
+.page-container {
+  height: calc(100vh - 4em);
+  width: 100%;
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  @media only screen and (max-width: 976px) {
+    width: 95%;
+  }
+}
+
+.project-title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.project-content {
+  width: 100%;
+  margin-top: 1em;
+}

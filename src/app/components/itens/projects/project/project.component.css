@@ -8,6 +8,14 @@
   border-radius: 1em;
 }
 
+.container:hover {
+  cursor: pointer;
+
+  .title, .technologies {
+    color: #000000;
+  }
+}
+
 .title {
   margin: 0.5em 0.5em;
   text-align: center;
