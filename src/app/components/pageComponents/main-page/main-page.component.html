@@ -1,9 +1,46 @@
 <app-base-page>
   <div class="page-container">
-    <div>Main Page!</div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+
+    <div class="main-container">
+
+      <p class="main-text01">Olá, me chamo <span whiteShadowHover>Matheus Badia</span></p>
+
+      <p class="main-text02">Desenvolvedor back-end</p>
+
+      <div class="main-container-content">
+        <div class="image-container">
+          <img class="main-image" src="assets/images/homemcomputador.png" alt="Imagem homem num computador ilustração">
+        </div>
+        <div class="text-container">
+          <p class="main-text03">
+            Sou estudante de Análise e Desenvolvimento de Sistemas em Bertioga.
+            Atualmente, estou em busca do meu primeiro estágio na área de desenvolvimento
+            de software.
+          </p>
+          <p class="main-text04">
+            Tenho interesse em back-end e venho me dedicando ao estudo de diversas tecnologias
+            Java e em várias ferramentas do ecossistema Spring, como Spring Boot,
+            Spring Data JPA, Spring Web e Spring Security.
+          </p>
+          <p class="main-text05">
+            Além de tecnologias pra back-end, estudo Typescript e Angular para desenvolvimento de aplicações web.
+          </p>
+
+          <div id="buttonList01"  class="button-list">
+            <button highlightHover class="main-page-button" (click)="downloadService.downloadCurriculum()">Download Currículo</button>
+            <button highlightHover class="main-page-button" (click)="routerService.toProjects()">Ver Projetos</button>
+            <button highlightHover class="main-page-button" (click)="routerService.toContacts()">Contatos</button>
+          </div>
+        </div>
+
+        <div id="buttonList02" class="button-list">
+          <button highlightHover class="main-page-button" (click)="downloadService.downloadCurriculum()">Download Currículo</button>
+          <button highlightHover class="main-page-button" (click)="routerService.toProjects()">Ver Projetos</button>
+          <button highlightHover class="main-page-button" (click)="routerService.toContacts()">Contatos</button>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </app-base-page>

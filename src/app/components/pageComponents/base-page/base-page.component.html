@@ -2,9 +2,10 @@
   <header class="header-container">
     <div class="header-container-content">
       <div class="header-container-logo">
-       <img id="logo-image" src="assets/images/logoport.png" (click)="routerService.toHomepage()">
+       <img id="logo-image" src="assets/images/logoport.png" alt="Ilustração de homem sentado em frente ao computador (programador)" (click)="routerService.toHomepage()">
       </div>
       <ul class="header-container-options">
+        <li highlightHover class="header-container-options-option" (click)="routerService.toHomepage()">Página inicial</li>
         <li highlightHover class="header-container-options-option" (click)="routerService.toContacts()">Contatos</li>
         <li highlightHover class="header-container-options-option" (click)="routerService.toProjects()">Projetos</li>
         <li highlightHover class="header-container-options-option" (click)="routerService.toTechnologies()">Tecnologias</li>

@@ -31,13 +31,13 @@ export class ContactPageComponent {
 
   copyEmail(){
     this.contactService.copyEmail();
-    this.notificationElement.changeMessage("E-mail copiado com successo")
+    this.notificationElement.changeMessage("E-mail copiado")
     this.notificationElement.showNotification()
   }
 
   copyNumber() {
     this.contactService.copyNumber();
-    this.notificationElement.changeMessage("Número copiado com successo")
+    this.notificationElement.changeMessage("Número copiado")
     this.notificationElement.showNotification()
   }
 
