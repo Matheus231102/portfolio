@@ -6,8 +6,9 @@ import {TechnologiesPagesComponent} from "./components/pageComponents/technologi
 import {Project01Component} from "./components/documentedProjects/project01/project01.component";
 
 export const routes: Routes = [
-  { path: "", component: MainPageComponent },
-  { path: "matheusbadia", component: MainPageComponent },
+  { path: "matheus", component: MainPageComponent },
+  { path: "", redirectTo: "matheus", pathMatch: "full"},
+  { path: "**", redirectTo: "matheus", pathMatch: "full"},
   { path: "contatos", component: ContactPageComponent },
   { path: "projetos", component: ProjectPageComponent },
   { path: "tecnologias", component: TechnologiesPagesComponent },
