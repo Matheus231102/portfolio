@@ -9,7 +9,7 @@ export class RouterService {
   constructor(private router: Router) {}
 
   public toHomepage(): void {
-    this.router.navigate(["matheusbadia"])
+    this.router.navigate(["home"])
   }
 
   public toContacts(): void {
