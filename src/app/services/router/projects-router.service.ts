@@ -12,4 +12,8 @@ export class ProjectsRouterService {
     this.router.navigate(["project01"])
   }
 
+  public project02(): void {
+    this.router.navigate(["project02"])
+  }
+
 }

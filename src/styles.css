@@ -36,3 +36,27 @@ body {
 .whiteShadowHover {
   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 2px 2px 5px rgba(75,206,90,0);
 }
+
+/* projects page css*/
+.documentation-text {
+  margin-top: 1em;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.list-field-space {
+  width: 70%;
+  margin-left: 5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-field-space li {
+  margin: 0.5em 0;
+}
+
+.subtitle-margin {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}

@@ -4,6 +4,7 @@ import {ContactPageComponent} from "./components/pageComponents/contact-page/con
 import {ProjectPageComponent} from "./components/pageComponents/project-page/project-page.component";
 import {TechnologiesPagesComponent} from "./components/pageComponents/technologies-pages/technologies-pages.component";
 import {Project01Component} from "./components/documentedProjects/project01/project01.component";
+import {Project02Component} from "./components/documentedProjects/project02/project02.component";
 
 export const routes: Routes = [
   { path: "home", component: MainPageComponent },
@@ -12,4 +13,5 @@ export const routes: Routes = [
   { path: "projetos", component: ProjectPageComponent },
   { path: "tecnologias", component: TechnologiesPagesComponent },
   { path: "project01", component: Project01Component },
+  { path: "project02", component: Project02Component },
 ];

@@ -1,0 +1,11 @@
+.video-container {
+  width: 100%;
+}
+
+.video-container iframe {
+  width: 100%;
+}
+
+.empty-div {
+  height: 10em;
+}
