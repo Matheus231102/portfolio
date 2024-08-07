@@ -1,0 +1,73 @@
+<app-project-documentation
+  [projectTitle]="'Registro de Usuários com Autenticação e Verificação de Disponibilidade em Tempo Real'"
+  [projectDescription]="'Página de registro de usuário com autenticação e verificação de disponibilidade de e-mail e nome de usuário através da mudança de estado dos formulários ' +
+   'com FormGroup e os repectivos FormControls juntamente com funções específicas no back-end'">
+
+  <div>
+    <div>
+      <app-github-link [link]="project02Link">
+      </app-github-link>
+    </div>
+    <p class="documentation-text">
+      O componente define vários controladores de formulário (FormControl),
+      cada um com suas próprias regras de validação,
+      e os adiciona a um grupo de formulário principal (FormGroup).
+      As regras de validação incluem:
+    </p>
+    <ul class="list-field-space">
+      <li><b>nameInput</b>: Obrigatório, comprimento mínimo de 2 caracteres.</li>
+      <li><b>usernameInput</b>: Obrigatório, comprimento mínimo de 4 caracteres, sem espaços.</li>
+      <li><b>emailInput</b>: Obrigatório, formato de e-mail válido.</li>
+      <li><b>passwordInput</b> e <b>password2Input</b>: Obrigatório, utiliza Regex para validar padrão específico
+        (mínimo de 8 caracteres, pelo menos um dígito, uma letra maiúscula e uma minúscula).</li>
+    </ul>
+
+    <h3 class="subtitle-margin"><b>Verificação de Disponibilidade de E-mail e Nome de Usuário</b></h3>
+    <p class="documentation-text">
+      O componente define vários controladores de formulário (FormControl),
+      cada um com suas próprias regras de validação,
+      e os adiciona a um grupo de formulário principal (FormGroup).
+      As regras de validação incluem:
+    </p>
+    <ul class="list-field-space">
+      <li><b>E-mail</b>: Após 350ms de inatividade, se o e-mail for válido, uma verificação de disponibilidade é feita.</li>
+      <li><b>Nome de Usuário</b>: Após 600ms de inatividade, se o nome de usuário for válido, uma verificação de disponibilidade é feita.</li>
+    </ul>
+
+    <h3 class="subtitle-margin"><b>Funções de Validação</b></h3>
+    <p class="documentation-text">
+      Algumas funções de validação verificam se os campos atendem aos critérios definidos:
+    </p>
+    <ul class="list-field-space">
+      <li><b>Validade do Formulário</b>: Verifica se o formulário como um todo é válido.</li>
+      <li><b>Disponibilidade das Credenciais</b>: Verifica se tanto o e-mail quanto o nome de usuário estão disponíveis.</li>
+      <li><b>Validade dos Campos</b>: Funções específicas para verificar a validade de cada campo individualmente.</li>
+      <li><b>Correspondência de Senhas</b>: Verifica se as duas senhas inseridas são iguais.</li>
+      <li><b>Critérios de Senha</b>: Funções para verificar se a senha atende aos critérios específicos, como conter pelo menos um dígito,
+        uma letra maiúscula, uma letra minúscula, comprimento mínimo, e uso de caracteres especiais permitidos.</li>
+    </ul>
+
+    <h3 class="subtitle-margin"><b>Registro do Usuário</b></h3>
+    <p class="documentation-text">
+      Quando o usuário tenta se registrar, a função `registerUser` verifica se o formulário é válido,
+      se as senhas coincidem e se o e-mail e o nome de usuário estão disponíveis. Se todas as condições forem satisfeitas,
+      a função chama o serviço de registro (`registerService`) para registrar o usuário no back-end.
+      Se o registro for bem-sucedido, um token JWT é recebido e armazenado localmente, e o usuário é redirecionado
+      para a página inicial.
+    </p>
+
+    <h3 class="subtitle-margin"><b>Vídeo do Funcionamente de Parte do Projeto</b></h3>
+    <div class="video-container">
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/Xf4Rq891Ucc?si=7B0zvjiQcWyRZmfO"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write;
+              encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+    </div>
+    <div class="empty-div">
+    </div>
+  </div>
+
+</app-project-documentation>

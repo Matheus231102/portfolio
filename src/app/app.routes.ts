@@ -4,13 +4,14 @@ import {ContactPageComponent} from "./components/pageComponents/contact-page/con
 import {ProjectPageComponent} from "./components/pageComponents/project-page/project-page.component";
 import {TechnologiesPagesComponent} from "./components/pageComponents/technologies-pages/technologies-pages.component";
 import {Project01Component} from "./components/documentedProjects/project01/project01.component";
+import {Project02Component} from "./components/documentedProjects/project02/project02.component";
 
 export const routes: Routes = [
-  { path: "matheus", component: MainPageComponent },
-  { path: "", redirectTo: "matheus", pathMatch: "full"},
-  { path: "**", redirectTo: "matheus", pathMatch: "full"},
+  { path: "home", component: MainPageComponent },
+  { path: "", redirectTo: "home", pathMatch: "full"},
   { path: "contatos", component: ContactPageComponent },
   { path: "projetos", component: ProjectPageComponent },
   { path: "tecnologias", component: TechnologiesPagesComponent },
   { path: "project01", component: Project01Component },
+  { path: "project02", component: Project02Component },
 ];
