@@ -142,3 +142,8 @@
   color: #000000;
   cursor: pointer;
 }
+
+.locale {
+  margin-top: 0.5em;
+  margin-left: 1em;
+}
